@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main: rgb(231, 231, 231);
+    --orange: #D88400;
+    --background: #080d42;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    color: var(--main);
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    min-height: 100vh;
+    min-width: 40%;
+    background: url(./img/pexels-pixabay-314860.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+}
+
+.div-title {
+    background-color: rgba(0, 0, 0, 0.686);
+    align-items: center;
+    padding: 40px 0;
+    margin: auto;
+    width: 100%;
+}
+
+h1 {
+    color: var(--main);
+}
+
+.right {
+    background-color: var(--background);
+    min-width: 60%;
+    padding: 10px;
+    padding-left: 5%;
+}
+
+.form-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-text p:last-of-type {
+    padding: 30px 0;
+}
+
+span {
+    font-style: italic;
+    color: var(--orange);
+}
+
+.content {
+    max-width: 700px;
+    padding-top: 100px;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 60px;
+}
+
+label, input {
+    width: 300px;
+    display: block;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+input {
+    padding: 4px 8px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: var(--orange);
+    color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0px 0px 12px 0px var(--main);
+    transition: all 1s;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--main);
+    border: 2px solid var(--orange);
+    box-shadow: 0px 0px 12px 0px var(--orange);
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--orange);
+    transition: all 1s;
+}
+
+a:hover {
+    color: var(--main);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    label, input {
+        width: 180px;
+  }
+}
